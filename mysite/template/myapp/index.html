@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <!--Latest compiled and minified CSS-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static 'mycss\mycss.css' %}" >
+      <script src="{% static 'myscript\myscript.js' %}"></script>
+     <title>HACHI_21</title>
+  </head>
+  <body class="loader">
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="text-center"><em>WELCOME TO TWENTY-ONE</em> </h1>
+      </div>
+    </div>
+    <form method="POST">
+      <h1 class="text-center" >YOU GOT LUCKY $<INPUT TYPE=text NAME="ACCOUNT"  ID="ACCOUNT" VALUE="BET"  MAXLENGTH=3 SIZE=3 readonly><a href="{% url 'game' %}">BET NOW</a></h1>
+    </form>
+
+  </body>
+</html>
